@@ -32,6 +32,7 @@ def pic content, book, result_folder
 
   begin
     %x(convert \
+    -strip -interlace Plane -gaussian-blur 0.05 -quality 85% \
     -font './1218.otf' \
     -size 2048x2048 \
     -gravity NorthWest \
